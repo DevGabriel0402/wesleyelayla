@@ -35,10 +35,15 @@ body {
 }
 
 .header img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 150px;
   animation: toUp 0.3s forwards;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  /* background-color: #d6e9f2; */
+  padding: 4px;
+  border: 8px solid #580e13;
 }
 
 .header p {
