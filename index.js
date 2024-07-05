@@ -9,5 +9,5 @@ btnConfirmar.addEventListener("click", () => {
       "_blank"
     );
     toastInfo.classList.add("hidden");
-  }, 3500);
+  }, 10500);
 });
