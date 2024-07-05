@@ -10,6 +10,64 @@ body {
   background-color: #d6e9f2;
 }
 
+.toast {
+  margin: 20px;
+  position: absolute;
+  min-width: 320px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  z-index: 10;
+  background-color: #580e1370;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #f3efef;
+  backdrop-filter: blur(20px);
+  border: 1px solid #f3efef70;
+  transform: scale(0);
+  animation: scale 0.3s forwards;
+
+  .title-toast {
+    font-size: 30px;
+  }
+}
+
+.bar {
+  position: relative;
+  width: 100px;
+  height: 16px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+}
+
+.bar-dentro {
+  position: absolute;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 0%;
+  background-color: #fff;
+  height: 12px;
+  border-radius: 2px;
+  animation: carregamento 3s forwards;
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes carregamento {
+  to {
+    width: 100%;
+  }
+}
+
 .hidden {
   display: none !important;
 }
@@ -22,7 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding: 55px;
 }
 
@@ -80,6 +138,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .botoes a:hover {
