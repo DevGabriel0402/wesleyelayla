@@ -33,6 +33,7 @@ body {
 
   .title-toast {
     font-size: 30px;
+    line-height: normal;
   }
 }
 
@@ -53,7 +54,7 @@ body {
   background-color: #fff;
   height: 12px;
   border-radius: 2px;
-  animation: carregamento 3s forwards;
+  animation: carregamento 11s forwards;
 }
 
 @keyframes scale {
